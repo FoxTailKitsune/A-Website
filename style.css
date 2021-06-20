@@ -1,0 +1,59 @@
+:root {
+  --dark: #212121;
+  --light: #bcbcbc;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+h1 {
+  text-align: center;
+}
+
+#toc {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+* {
+  color: var(--fontColor);
+  font-family: monospace;
+}
+
+.light-theme {
+  --bg:var(--white);
+  --fontColor:var(--black);
+  --btnBg:var(--black);
+  --btnFontColor:var(--white);
+}
+
+.dark-theme {
+  --bg:var(--dark);
+  --fontColor:var(--light);
+  --btnBg:var(--light);
+  --btnFontColor:var(--dark);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  font-size: 10px;
+}
+
+.btn:focus {outline-style: none}
